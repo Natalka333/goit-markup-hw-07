@@ -336,11 +336,14 @@ a {
 /* OUR TEAM */
 .team {
     background-color: var(--light);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+		padding-top: 96px;
+		padding-bottom: 96px;
 }
 .team-list {   
     display: flex;
+		flex-wrap: wrap;
     gap: 24px;
 }
 .team-titl {
@@ -355,8 +358,9 @@ a {
 }
 .team-item {
     background-color: #ffffff;
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     border-radius: 0px 0px 4px 4px;
+		width: 100%;
 }
 .team-aside {
     padding: 32px 16px;
@@ -386,8 +390,8 @@ a {
 }
 
 .team-soc-item {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
 }
 
 .team-soc-link {
@@ -560,16 +564,13 @@ margin-bottom: 72px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 16px;
-/* gap: 24px;  */
+gap: 72px 16px;
 }
 .client-soc-item {
     /* width: 168px;
     height: 88px; */
-		/* width: 190px;
-		height: 88px; */
 		width: calc((100% - 16px) /2 );
-		margin-bottom: 72px;
+
 }
 .client-soc-link {
     width: 100%;
@@ -975,7 +976,7 @@ gap: 16px;
 .input-button:focus {
   background-color: var(--pressed-state); 
 } 
-
+/* MEDIA */
 
 .container {
 	max-width: 428px;
@@ -986,27 +987,34 @@ gap: 16px;
 } 
 @media screen and (min-width: 480px) {
 	.container {
-		width: 428px;
+		max-width: 428px;
 	}
+
 }
 
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 768px;
 	}
+	.team >.container {
+		width: 428px;
+	}
 
-		.client-soc-item {
-					width: calc((100% - 72px) / 3);
-		}
+	.client-soc-item {
+		width: calc((100% - 72px) / 3);
+	}
+	.team-soc-link {
+		width: calc((100% - 16px) / 2); 
+	}
 
-		.client-soc-list {
-			gap: 24px;
-		}
 }
 
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1158px;
+	}
+	.team >.container {
+			width: 1158px;
 	}
 
 	.client {
@@ -1015,11 +1023,20 @@ gap: 16px;
 	}
 
 	.client-soc-item {
-		/* width: 168px;
-		height: 88px; */
-		width: calc((100% - 120px) / 6);
+		width: 168px;
+		height: 88px; 
 		}
 
+	.client-soc-link {
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  border: 1px solid var(--client);
+	  border-radius: 4px;
+	  color: var(--subtle-text);
+	}
 }
 
 
