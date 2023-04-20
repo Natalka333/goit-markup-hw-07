@@ -357,9 +357,6 @@ a {
     margin-bottom: 72px;
 }
 .team-item {
-    background-color: #ffffff;
-    /* width: calc((100% - 72px) / 4); */
-    border-radius: 0px 0px 4px 4px;
 		width: 100%;
 }
 .team-aside {
@@ -390,8 +387,8 @@ a {
 }
 
 .team-soc-item {
-    /* width: 40px;
-    height: 40px; */
+    width: 40px;
+    height: 40px;
 }
 
 .team-soc-link {
@@ -997,13 +994,13 @@ gap: 72px 16px;
 		max-width: 768px;
 	}
 	.team >.container {
-		width: 428px;
+		width: 582px;
 	}
 
 	.client-soc-item {
 		width: calc((100% - 72px) / 3);
 	}
-	.team-soc-link {
+	.team-item {
 		width: calc((100% - 16px) / 2); 
 	}
 
@@ -1037,6 +1034,12 @@ gap: 72px 16px;
 	  border-radius: 4px;
 	  color: var(--subtle-text);
 	}
+
+	.team-item {
+		width: calc((100% - 72px) / 4);
+		border-radius: 0px 0px 4px 4px;
+		background-color: #ffffff;
+		}
 }
 
 
