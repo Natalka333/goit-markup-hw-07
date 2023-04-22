@@ -37,6 +37,30 @@
 
 /* CUSTOMERS */
 
+.client {
+	background-color: var(--modal-backgraund);
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+.client-soc-list {
+	display: flex;
+	justify-content: center;
+	gap: 72px 24px;
+}
+.client-soc-item {
+	width: calc((100% - 72px) / 3);
+}
+
+.client-soc-link:hover,
+.client-soc-link:focus {
+	border-color: var(--pressed-state);
+	color: var(--pressed-state);
+}
+
+/* IMAGES */
+
+
+
 
 
 
