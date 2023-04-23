@@ -17,7 +17,7 @@
 </head>
 <body>
 <!-- Шапка -->
-		<!-- <header class="header">
+		<header class="header">
 		<div class="container header-container">
 						<nav class="header-navigation">
 								<a href="./index.html" class="logo link">Web<span class="logos link">Studio</span></a>
@@ -40,8 +40,38 @@
 										</li>
 								</ul>
 						</address>
+						<button type="button" class="menu-open-btn">
+							<svg class="menu-icon-btn" width="8" height="8">
+							<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use></svg></button>
 				</div>
-		</header> -->
+				<div class="mob-menu">
+						<button type="button" class="menu-close-btn">
+							<svg class="menu-icon-btn" width="8" height="8">
+							<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use>
+							</svg></button>
+            <nav>
+							    <ul class="mob-list list">
+								    <li class="mob-list-item">
+									    <a class="mob-list active link" href="./index.html">Studio</a>
+								    </li>
+								    <li>
+									    <a class="mob-list link" href="./portfolio.html">Portfolio</a>
+								    </li>
+								    <li>
+									    <a class="mob-list link" href="">Contacts</a>
+								    </li>
+							    </ul>
+				    </nav>
+									<ul class="mob-address-list list">
+										<li>
+											<a class="mob-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+										</li>
+										<li>
+											<a class="mob-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+										</li>
+									</ul>
+				</div>
+		</header> 
 				<!-- HERO -->
 		    <main class="hero">
 				<section class="hero-section">
@@ -109,13 +139,16 @@
 								<h2 class="section-img">What are we doing</h2>
 								<ul class="section-list list">
 										<li class="images-item">
-												<img src="./images/Rectangle712.jpg" alt="computer" width="360" height="300" />
+												<img srcset="./images/comp2x.jpg 2x"
+												src="./images/Rectangle712.jpg" alt="computer" width="360" height="300" />
 										</li>
 										<li class="images-item">
-												<img src="./images/Rectangle713.jpg" alt="smartphone" width="360" height="300" />
+												<img srcset="./images/phone2x.jpg 2x"
+												src="./images/Rectangle713.jpg" alt="smartphone" width="360" height="300" />
 										</li>
 										<li class="images-item">
-												<img src="./images/Rectangle714.jpg" alt="computer and smartphone" width="360" height="300" />
+												<img srcset="./images/comp-phone2x.jpg 2x"
+												src="./images/Rectangle714.jpg" alt="computer and smartphone" width="360" height="300" />
 										</li>
 								</ul>
 						</div>
@@ -126,7 +159,8 @@
 								<h2 class="team-titl">Our Team</h2>
 								<ul class="team-list list">
 										<li class="team-item">
-												<img src="./images/imgteam1.jpg" alt="Employee image"/>
+												<img srcset="./images/img1-team2x.jpg 2x"
+												src="./images/imgteam1.jpg" alt="Employee image"/>
 						<div class="team-aside">
 								<h3 class="team-title">Mark Guerrero</h3>
 								<p class="team-subtitle">Product Designer</p>
@@ -163,7 +197,8 @@
 						</div>
 								</li>
 								<li class="team-item">
-										<img src="./images/imgteam2.jpg" alt="Employee image"/>
+										<img srcset="./images/img2-team2x.jpg 2x"
+										src="./images/imgteam2.jpg" alt="Employee image"/>
 						<div class="team-aside">
 								<h3 class="team-title">Tom Ford</h3>
 								<p class="team-subtitle">Frontend Developer</p>
@@ -199,7 +234,8 @@
 						</div>
 								</li>
 								<li class="team-item">
-										<img src="./images/imgteam3.jpg" alt="Employee image"/>
+										<img srcset="./images/img3-team2x.jpg 2x"
+										src="./images/imgteam3.jpg" alt="Employee image"/>
 						<div class="team-aside">
 								<h3 class="team-title">Camila Garcia</h3>
 								<p class="team-subtitle">Marketing</p>
@@ -236,7 +272,8 @@
 						</div>
 								</li>
 								<li class="team-item">
-										<img src="./images/imgteam4.jpg" alt="Employee image"/>
+										<img srcset="./images/img4-team2x.jpg 2x"
+										src="./images/imgteam4.jpg" alt="Employee image"/>
 						<div class="team-aside">
 								<h3 class="team-title">Daniel Wilson</h3>
 								<p class="team-subtitle">UI Designer</p>
