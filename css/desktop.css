@@ -106,48 +106,20 @@
 /* HERO */
 
 .hero-section {
-    max-width: 1440px;
-    background-color: var(--primary-text-color);
-    background-image: var(--hero-bg), url(../images/hero-img1.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    margin: 0 auto;
+	max-width: 1440px;
+	background-color: var(--primary-text-color);
+	background-image: var(--hero-bg), url(../images/hero-img1.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	padding-top: 188px;
+	padding-bottom: 188px;
+	margin: 0 auto;
 }
-
 .hero-subject {
-    width: 496px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--white-background);
-    margin: 0 auto;
-    margin-bottom: 48px;
+	margin-bottom: 48px;
 }
 
-.hero-btn {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    color: var(--white-background);
-    background-color: var(--button-color);
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-    padding: 16px 32px;
-    border: 1px solid transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-property: background-color;
-    transition-duration: var(--time);
-    transition-timing-function: var(--timing-function);
-}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -157,18 +129,6 @@
 /* SECTION FEATURE*/
 .section-feature {
     padding-top: 120px;
-}
-.hidden-feature {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 .feature-container {
@@ -184,6 +144,7 @@
     gap: 24px;
     margin-bottom: 8px;
 }
+
 .feature-icon {
     width: 64px;
     height: 64px;
@@ -221,7 +182,6 @@
     padding-bottom: 120px;
     box-sizing: content-box;
 }
-
 .section-img {
     font-weight: 700;
     font-size: 36px;
