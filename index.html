@@ -40,36 +40,48 @@
 										</li>
 								</ul>
 						</address>
-						<button type="button" class="menu-open-btn">
+						<button data-menu-open type="button" class="menu-open-btn">
 							<svg class="menu-icon-btn" width="8" height="8">
 							<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use></svg></button>
 				</div>
-				<div class="mob-menu">
-						<button type="button" class="menu-close-btn">
-							<svg class="menu-icon-btn" width="8" height="8">
-							<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use>
-							</svg></button>
-            <nav>
-							    <ul class="mob-list list">
-								    <li class="mob-list-item">
-									    <a class="mob-list active link" href="./index.html">Studio</a>
-								    </li>
-								    <li>
-									    <a class="mob-list link" href="./portfolio.html">Portfolio</a>
-								    </li>
-								    <li>
-									    <a class="mob-list link" href="">Contacts</a>
-								    </li>
-							    </ul>
-				    </nav>
-									<ul class="mob-address-list list">
-										<li>
-											<a class="mob-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-										</li>
-										<li>
-											<a class="mob-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-										</li>
-									</ul>
+				<div class="mob-menu" data-menu>
+            <div>
+							<button data-menu-close type="button" class="menu-close-btn">
+								<svg class="menu-icon-btn" width="8" height="8">
+									<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use>
+								</svg></button>
+							<nav>
+								<ul class="mob-list list">
+									<li class="mob-list-item">
+										<a class="mob-list active link" href="./index.html">Studio</a>
+									</li>
+									<li class="mob-list-item">
+										<a class="mob-list link" href="./portfolio.html">Portfolio</a>
+									</li>
+									<li class="mob-list-item">
+										<a class="mob-list link" href="">Contacts</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div>
+							<ul class="mob-address-list list">
+								<li>
+									<a class="mob-address-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+								</li>
+								<li>
+									<a class="mob-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+								</li>
+							</ul>
+						</div>
+									<!-- <ul class="mob-soc-list list">
+										<li class="mob-soc-item">
+											<a class="mob-soc-link link" href="">
+												<svg class="mob-soc-icon" width="16" height="16">
+													<use href="./images/icons.svg#icon-instagram-2"></use>
+												</svg>
+											</a>
+										</li> -->
 				</div>
 		</header> 
 				<!-- HERO -->
@@ -363,7 +375,7 @@
 				</section>
 		</main>
 		<!-- FOOTER -->
-		<!-- <footer class="footer">
+		<footer class="footer">
 				<div class="container container-bottom">
 						<div class="footer-wrap">
 								<a href="./index.html" class="logo link">Web<span class="logos link">Studio</span></a>
@@ -416,9 +428,9 @@
 							</form>
 						</div>
 				</div>
-		</footer>  -->
+		</footer>
 		<!-- MODAL -->
-		<!-- <div class="backdrop is-hidden" data-modal>
+		<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
 						<button class="modal-close-btn" type="button" data-modal-close >
 								<svg class="modal-icon-btn" width="8" height="8">
@@ -469,8 +481,9 @@
 				</div>
 		</div>
 		<script src="./js/modal.js">
-		</script> -->
-
+		</script>
+		<script src="./js/menu.js">
+		</script>
 </body>
 
 </html>
