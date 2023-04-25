@@ -3,6 +3,50 @@
 	width: 100%;
 }
 /* HEADER */
+
+.header {
+    background-color: var(--white-background);
+    border-bottom: 1px solid var(--accent);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.header-container {
+    display: flex;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.header-navigation .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--button-color);
+
+}
+.header-navigation .logos {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--primary-text-color);
+} 
 .header-list .link {
 	position: relative;
 }
@@ -50,21 +94,32 @@
 }
 
 .address-list {
-	display: flex;
 	align-items: center;
 	margin-right: auto;
 	gap: 40px;
+	display: block;
 }
-
-.address-link {
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
+.address-tel-link {
+  font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
 	color: var(--title-text-color);
 	transition-property: color;
 	transition-duration: var(--time);
 	transition-timing-function: var(--timing-function);
 }
+.address-mail-link {
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: var(--title-text-color);
+	transition-property: color;
+	transition-duration: var(--time);
+	transition-timing-function: var(--timing-function);
+}
+/* .address-link:not(:last-child) {
+	margin-bottom: 12px;
+} */
 
 .address-link:hover,
 .address-link:focus {
@@ -161,8 +216,25 @@
 	color: var(--pressed-state);
 }
 
+/* FOOTER */
 
+.container-bottom {
+	display: flex;
+}
 
+.footer .content {
+	width: 264px;
+}
+.footer-aside {
+	margin-left: 24px;
+}
 
+/* FOOTER FORM */
+
+/* .footer-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
 
 
