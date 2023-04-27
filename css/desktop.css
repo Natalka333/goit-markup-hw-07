@@ -14,14 +14,12 @@
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--title-text-color);
 }
 .address-mail-link {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--title-text-color);
-}
+} 
 
 /* HERO */
 
@@ -296,31 +294,6 @@
 .container-bottom {
     display: flex;
 }
-/* .footer .stile {
-    text-transform: uppercase;
-}  */
-/* .footer .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--button-color);
-    text-decoration: none
-}
-.footer .logos {
-    color: var(--light);
-} */
-/* .footer .content {
-    width: 264px;
-    height: 72px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--accent);
-    margin-top: 16px;
-} */
 
 .footer-aside {
     margin-left: 120px;
@@ -379,48 +352,10 @@
 } */
 
 .footer-input {
-		width: 264px;
-		height: 40px;
-		font-style: normal;
-		font-size: 12px;
-		line-height: 2;
-		letter-spacing: 0.04em;
-		border: 1px solid #FFFFFF;
-		color: #ffffff;
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-		border-radius: 4px;
-		background: var(--hero-background);
 		padding: 8px 16px;
 		margin-right: 24px;
 } 
 
-.footer-btn {
-	  width: 165px;
-	  height: 100%;
-	  padding: 8px 24px;
-	  background: var(--button-color);
-	  border-radius: 4px;
-	  border: none;
-	  box-shadow: none;
-	  transition-property: background-color;
-	  transition-duration: var(--time);
-	  transition-timing-function: var(--timing-function);
-} 
-
-.footer-btn-icon {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.5;
-		letter-spacing: 0.04em;
-		color: var(--white-background);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 16px;
-				
-}
 
 .footer-input::placeholder {
     color: var(--white-background);
@@ -432,7 +367,7 @@
 
 
        /* MODAL */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
 		z-index: 3;
@@ -657,7 +592,7 @@
 .input-button:hover,
 .input-button:focus {
   background-color: var(--pressed-state); 
-} 
+}  */
 
 
 
