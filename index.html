@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
-		<link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1158px)">
+		<link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1200px)">
 </head>
 <body>
 <!-- Шапка -->
@@ -40,9 +40,10 @@
 										</li>
 								</ul>
 						</address>
-						<button class="menu-open-btn" data-menu-open type="button">
-							<svg class="menu-icon-btn" width="8" height="8">
-							<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use></svg></button>
+						<button type="button" class="menu-open-btn" data-menu-open>
+							<svg class="menu-icon-open-btn" width="32" height="22">
+							<use href="./images/burger btn.svg#icon-charm_menu-hamburger"></use></svg>
+						</button>
 				</div>
 				<div class="mob-menu is-hidden" data-menu>
             <div>
@@ -437,18 +438,20 @@
 										</li>
 								</ul>
 						</div>
-						<div class="container-form">
+						<form class="footer-form">
 								<p class="form-title">Subscribe</p>
-								<form class="footer-form">
+						<div class="container-form">
+							<label>
 								<input class="footer-input" name="subscribe-email" id="user-email" type="email" placeholder="E-mail" >
+							</label>
 								<button type="submit" class="footer-btn">
 									<span class="footer-btn-icon">Subscribe<svg class="footer-icon" width="24" height="20">
 									<use href="./images/footer-icon.svg#icon-icon-send"></use>
 								</svg>
 								</span>
 								</button>
-							</form>
 						</div>
+						</form>
 				</div>
 		</footer>
 		<!-- MODAL -->
