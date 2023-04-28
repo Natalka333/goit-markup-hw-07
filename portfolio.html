@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-
-    <link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+		<link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1158px)">
 </head>
 <body>
     <!-- ШАПКА -->
@@ -21,21 +22,90 @@
             <nav class="header-navigation">
                     <a href="./index.html" class="logo link">Web<span class="logos link">Studio</span></a>
                 <ul class="header-list list">
-                    <li><a class="header-list link" href="./index.html">Studio</a></li>
-                    <li><a class="header-list active link" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="header-list link" href="">Contacts</a></li>
+                    <li>
+											<a class="header-list link" href="./index.html">Studio</a></li>
+                    <li class="header-list-item">
+											<a class="header-list active link" href="./portfolio.html">Portfolio</a></li>
+                    <li>
+											<a class="header-list link" href="">Contacts</a></li>
                 </ul>
             </nav>
             <address class="address">
-                <ul class="address-list list">
-                    <li>
-                        <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
+								<ul class="address-list list">
+									<li class="address-link">
+										<a class="address-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+									</li>
+									<li class="address-link">
+										<a class="address-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+									</li>
+								</ul>
             </address>
+									<button type="button" class="menu-open-btn" data-menu-open>
+										<svg class="menu-icon-open-btn" width="32" height="22">
+											<use href="./images/burger btn.svg#icon-charm_menu-hamburger"></use>
+										</svg>
+									</button>
+									</div>
+									<div class="mob-menu is-hidden" data-menu>
+										<div class="container-mob-menu">
+											<button class="menu-close-btn" data-menu-close type="button">
+												<svg class="menu-icon-btn" width="8" height="8">
+													<use href="./images/menu-icon-btn.svg#icon-close-black-18dp-2-1"></use>
+												</svg></button>
+											<nav>
+												<ul class="mob-list list">
+													<li class="mob-list-item">
+														<a class="mob-list active link" href="./index.html">Studio</a>
+													</li>
+													<li class="mob-list-item">
+														<a class="mob-list link" href="./portfolio.html">Portfolio</a>
+													</li>
+													<li class="mob-list-item">
+														<a class="mob-list link" href="">Contacts</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<div class="container-mob-address-menu">
+											<ul class="mob-address-list list">
+												<li class="mob-address link">
+													<a class="mob-address-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+												</li>
+												<li class="mob-address link">
+													<a class="mob-address-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+												</li>
+											</ul>
+											<ul class="mob-soc-list list">
+												<li class="mob-soc-item">
+													<a class="mob-soc-link link" href="">
+														<svg class="mob-soc-icon" width="24" height="24">
+															<use href="./images/footer.svg#icon-instagram-2"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="mob-soc-item">
+													<a class="mob-soc-link link" href="">
+														<svg class="mob-soc-icon" width="24" height="24">
+															<use href="./images/footer.svg#icon-twitter-1"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="mob-soc-item">
+													<a class="mob-soc-link link" href="">
+														<svg class="mob-soc-icon" width="24" height="24">
+															<use href="./images/footer.svg#icon-facebook-1"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="mob-soc-item">
+													<a class="mob-soc-link link" href="">
+														<svg class="mob-soc-icon" width="24" height="24">
+															<use href="./images/footer.svg#icon-linkedin-1"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
         </div>
     </header>
     <!-- SECTION BUTTON META-->
