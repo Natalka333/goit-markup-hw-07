@@ -302,6 +302,9 @@
 	padding-bottom: 100px;
 }
 
+.footer>.container {
+	display: flex;
+}
 .footer-aside {
     margin-left: 120px;
 } 
