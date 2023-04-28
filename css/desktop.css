@@ -288,6 +288,7 @@
 
 .client-soc-list {
     display: flex;
+		flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
 }
@@ -319,16 +320,15 @@
 .container-form {
 		margin-left: 80px;
 }
-
+.content {
+	width: 264px;
+	height: 72px;
+}
 .footer-form {
 		display: flex;
 		justify-content: center;
 }  
 
-.footer-input {
-		padding: 8px 16px;
-		margin-right: 24px;
-} 
 
 .footer-input::placeholder {
     color: var(--white-background);
