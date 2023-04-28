@@ -2,14 +2,6 @@
     max-width: 1158px;
   }
 
-		/* @media screen and (min-width: 1158px) {
-	
-			.client>.container,
-			.footer>.container {
-				max-width: 1128px;
-			}
-		} */
-
 /* HEADER */
 
 .address-list {
@@ -42,6 +34,7 @@
 	padding-bottom: 188px;
 	margin: 0 auto;
 }
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -49,6 +42,7 @@
 		background-image: var(--hero-bg), url(../images/hero-bg-desc2x.jpg);
 	}
 }
+
 .hero-subject {
 	margin-bottom: 48px;
 }
@@ -59,6 +53,7 @@
 }
 
 /* SECTION FEATURE*/
+
 .section-feature {
     padding-top: 120px;
 }
@@ -69,6 +64,7 @@
     width: 264px;
     height: 112px;
 }
+
 .feature-container {
     display: flex;
     justify-content: center;
@@ -104,11 +100,13 @@
 }
 
 /* IMAGES */
+
 .images {
     padding-top: 120px;
     padding-bottom: 120px;
     box-sizing: content-box;
 }
+
 .section-img {
     font-weight: 700;
     font-size: 36px;
@@ -119,16 +117,19 @@
     color: var(--primary-text-color);
     margin-bottom: 72px;
 }
+
 .section-list {
     display: flex;
     gap: 24px;
     justify-content: center;
 }
+
 .images-item {
     width: calc((100% - 48) / 3);
 } 
 
 /* OUR TEAM */
+
 .container {
 	max-width: 1158px;
 	width: 100%;
@@ -138,7 +139,6 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 
 .team-list {   
     display: flex;
@@ -151,13 +151,13 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-
-
 /* SECTION BUTTON META*/
+
 .meta-section {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+
 .hidden-navigation {
     position: absolute;
     width: 1px;
@@ -170,6 +170,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .meta-btn {
     display: flex;
     justify-content: center;
@@ -177,8 +178,8 @@
     align-items: center;
     text-align: center;
     margin-bottom: 72px;
-
 }
+
 .btn {
     font-family:'Roboto', sans-serif;
     font-weight: 500;
@@ -206,6 +207,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-color: transparent;
 }
+
 .list {
     list-style: none; 
 }
@@ -227,6 +229,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .work-cover-text {
     position: absolute;
     top: 0;
@@ -242,19 +245,23 @@
     transform: translateY(100%);
     transition: transform var(--time) var(--timing-function);
 }
+
 .work-link {
     display: block;
     transition-property: box-shadow;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 }
+
 .work-link:hover,
 .work-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .work-link:hover .work-cover-text {
     transform: translate(0);
 }
+
 .work-aside {
     padding: 0px 16px;
     gap: 8px;
@@ -278,6 +285,7 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
+
 /* CUSTOMERS */
 
 .client {
@@ -298,6 +306,7 @@
 }
 
 /* FOOTER */
+
 .footer {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -325,10 +334,9 @@
 	height: 72px;
 }
 .footer-form {
-		display: flex;
-		justify-content: center;
+  display: flex;
+	justify-content: center;
 }  
-
 
 .footer-input::placeholder {
     color: var(--white-background);
@@ -337,8 +345,8 @@
 .footer-btn:focus {
   background-color: var(--pressed-state);
 }
-@media screen and (min-width: 1158px) {
 
+@media screen and (min-width: 1158px) {
 	.footer>.container,
 	.client>.container, .team > .container {
 		max-width: 1128px;
@@ -347,232 +355,7 @@
 }
 
        /* MODAL */
-/* .backdrop {
-    position: fixed;
-    top: 0;
-		z-index: 3;
-    width: 100%;
-    height: 100%;
-    background: rgba(46, 47, 66, 0.4);
-    transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function); 
-}
 
-.modal {
-    width: 408px;
-    min-height: 584px;
-    background-color: var(--modal-backgraund);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-    transition: transform var(--time) var(--timing-function);
-    padding: 72px 24px 24px;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(0) rotate(-90deg); 
-}
-
-.modal-close-btn {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: var(--accent);
-    color: var(--primary-text-color);
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    transition-property: color, background-color;
-    transition-duration: var(--time);
-    transition-timing-function: var(--timing-function);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    color: #ffffff;
-    background-color: var(--pressed-state);
-
-}
-.modal-icon-btn {
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
-}
-
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.modal-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em; 
-  color: var(--primary-text-color);
-  margin-bottom: 16px;
-}
-.modal-field {
-  margin-bottom: 8px;
-}
-.input-wrap {
-  position: relative;
-  border-radius: 4px;
-}
-.modal-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(57, 58, 83, 0.4);
-  border-radius: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  padding-left: 38px;
-  outline: transparent;
-  transition-property: border-color;
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
-} 
-
-.modal-input:focus {
-  border-color: var(--button-color);
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--button-color);
-}
-
-.input-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: var(--dark);
-}
-
-.input-text{
-  display: block;
-  margin-bottom: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--subtle-text);
-}
-
-.modal-textarea {
-	margin-bottom: 16px;
-}
-
-.user-textarea {
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(57, 58, 83, 0.4);
-  border-radius: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-	display: block;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  outline: transparent;
-  padding: 8px 16px;
-  color: var(--primary-text-color);
-  resize: none;
-}
-
-.user-text {
-  margin-bottom: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--dark);
-}
-
-.modal-check {
-	margin-bottom: 24px;
-}
-
-.check-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--subtle-text);
-  display: flex;
-  align-items: center;
-}
-
-.check-text span {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-}
-
-.input-check:checked + .check-text span {
-  background-color: var(--pressed-state);
-  border: none;
-  border-radius: 2px;
-}
-.input-check:focus + .check-text span {
-  border-color: var(--button-color); 
-}
-
-.check-link {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-  color: var(--button-color);
-} 
-
-.input-button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  color: var(--white-background);
-  background-color: var(--button-color);
-  border-radius: 4px;
-  display: block;
-  min-width: 169px;
-	min-height: 56px;
-  margin: 0 auto;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: background-color;
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
-}
-
-.input-button:hover,
-.input-button:focus {
-  background-color: var(--pressed-state); 
-}  */
 
 
 
