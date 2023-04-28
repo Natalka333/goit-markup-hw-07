@@ -322,7 +322,6 @@
 
 .footer-form {
 		display: flex;
-		align-items: center;
 		justify-content: center;
 }  
 
@@ -331,7 +330,6 @@
 		margin-right: 24px;
 } 
 
-
 .footer-input::placeholder {
     color: var(--white-background);
 } 
@@ -339,7 +337,14 @@
 .footer-btn:focus {
   background-color: var(--pressed-state);
 }
+@media screen and (min-width: 1158px) {
 
+	.footer>.container,
+	.client>.container, .team > .container {
+		max-width: 1128px;
+		width: 100%;
+	}
+}
 
        /* MODAL */
 /* .backdrop {
