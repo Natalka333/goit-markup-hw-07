@@ -587,7 +587,6 @@ margin-bottom: 16px;
 	padding: 8px 16px;
 	margin-right: 24px;
 	margin-bottom: 16px;
-	margin: 0 auto;
 }
 
 .footer-btn {
@@ -603,6 +602,7 @@ margin-bottom: 16px;
 	transition-duration: var(--time);
 	transition-timing-function: var(--timing-function);
 	margin-top: 16px;
+	margin: 0 auto;
 }
 
 .footer-btn-icon {
