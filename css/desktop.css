@@ -3,11 +3,13 @@
   }
 
 /* HEADER */
-
+.header {
+		padding-top: 24px;
+		padding-bottom: 24px;
+}
 .address-list {
 	display: flex;
-	align-items: center;
-	margin-right: auto;
+	flex-direction: row;
 	gap: 40px;
 }
 
