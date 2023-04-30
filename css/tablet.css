@@ -176,7 +176,9 @@
 
 .team-item {
 	width: calc((100% - 24px) / 2);
+	margin-bottom: 0;
 }
+
 
 .team-soc-link {
 	width: 100%;
