@@ -85,6 +85,10 @@
 	gap: 12px;
 }
 
+.address-link {
+	height: 14px;
+}
+
 .address-tel-link {
   font-size: 12px;
 	line-height: 1.17;
@@ -259,6 +263,7 @@
 @media screen and (min-width: 767px) {
 	.tablet, .footer-form {
 		display: flex;
+		flex-direction: row;
 	}
 	
 	.container-form>.form-title {
