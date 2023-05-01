@@ -678,8 +678,8 @@ height: 100%;
 @media screen and (max-width: 767px) {
 	.footer>.container, .tablet {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
 	    gap: 72px;
 	}
 	.footer-wrap, .footer-aside  {
@@ -692,10 +692,6 @@ height: 100%;
 			text-align: center;
 			margin-bottom: 16px;
 		}
-}
-.footer-form {
-	display: flex;
-	flex-direction: column;
 }
 
 .container-form {
