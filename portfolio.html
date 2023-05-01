@@ -135,7 +135,15 @@
                 <li class="work-item">
                     <a href="" class="work-link link">
                     <div class="work-cover-wrap">
-                    <img src="./images/img1.jpg" alt="Work"/>
+											<picture>
+												<source srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" 
+												media="(min-width: 1200px)">
+												<source srcset=""
+												media="(min-width: 768px)">
+												<source srcset="" 
+												media="(max-width: 767px)">
+												<img src="./images/img1.jpg" alt="Work" width="360" height="300"/>
+											</picture>
                     <p class="work-cover-text">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>
