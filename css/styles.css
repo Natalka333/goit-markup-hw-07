@@ -980,6 +980,10 @@ padding-bottom: 48px;
 	overflow: hidden;
 }
 
+/* .meta-btn{
+	width: 263px;
+} */
+
 @media screen and (max-width: 767px) {
 .meta-btn {
 		display: flex;
@@ -988,9 +992,9 @@ padding-bottom: 48px;
 		padding-top: 48px;
 		padding-bottom: 48px;
 	}
-		.meta-btn {
+		/* .meta-btn {
 		max-width: 100%;
-		}
+		} */
 } 
 
 .btn {
@@ -1028,7 +1032,7 @@ padding-bottom: 48px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	margin-bottom: 48px;
+	gap: 48px;
 }
 
 .work-list:not(:last-child) {
